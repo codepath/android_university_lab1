@@ -15,4 +15,13 @@ public class BestSellerBook {
 
    @SerializedName("book_image")
    public String bookImageUrl;
+
+   @SerializedName("publisher")
+   public String publisher;
+
+   @SerializedName("description")
+   public String description;
+
+   @SerializedName("amazon_product_url")
+   public String amazonUrl;
 }

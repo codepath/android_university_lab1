@@ -48,7 +48,6 @@ public class BestSellerBooksFragment extends Fragment implements OnListFragmentI
         ContentLoadingProgressBar progressBar = (ContentLoadingProgressBar) view.findViewById(R.id.progress);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.list);
 
-        // Set the adapter
         Context context = view.getContext();
         recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
         updateAdapter(progressBar, recyclerView);

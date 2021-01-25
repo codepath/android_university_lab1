@@ -28,7 +28,7 @@ public class NYTimesApiClient {
     private static final String API_KEY = "9HzaGUdGN4fsLzHApI9JI7IqBck8JAXK";
     private NYTimesService nyTimesService;
 
-    public NYTimesApiClient() {q
+    public NYTimesApiClient() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.nytimes.com")
                 .addConverterFactory(GsonConverterFactory.create())

@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/book_title"
-        android:layout_width="wrap_content"
+        android:id="@+id/ranking"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:text="Num" />
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#000000"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/book_author"
-        android:layout_width="wrap_content"
+        android:layout_width="191dp"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:text="Book Author" />
+
+    <TextView
+        android:id="@+id/book_description"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:text="Book description" />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:text="Buy on Amazon" />
+
 </LinearLayout>

@@ -19,6 +19,8 @@ import retrofit2.converter.gson.GsonConverterFactory
  * https://developer.nytimes.com/get-started to create your own developer account,
  * after copy and paste the API key under your Account -> Apps -> <Your App> -> API Keys
 </Your> */
+// TODO: Replace the below API key with your own generated key
+private const val API_KEY = "<YOUR-API-KEY-GOES-HERE>"
 class NYTimesApiClient {
     private val nyTimesService: NYTimesService
 
@@ -50,10 +52,4 @@ class NYTimesApiClient {
             }
         })
     }
-
-    companion object {
-        // TODO: Replace the below API key with your own generated key
-        private const val API_KEY = "<YOUR-API-KEY-GOES-HERE>"
-    }
-
 }

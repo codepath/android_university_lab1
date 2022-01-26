@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:rotationY="29"
+        tools:srcCompat="@tools:sample/avatars" />
+
 
     <TextView
         android:id="@+id/book_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Example Title"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/book_author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:text="John Doe"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/book_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a sample description for testing purposes." />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#507740"
+        android:text="BUY"
+        android:textStyle="bold" />
 </LinearLayout>
